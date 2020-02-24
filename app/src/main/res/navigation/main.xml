@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/main" app:startDestination="@id/firstFragment">
+
+    <fragment android:id="@+id/firstFragment" android:name="org.d3if0086.myapplication.FirstFragment"
+              android:label="Pra-Assessment">
+        <action android:id="@+id/action_firstFragment_to_persegiFragment" app:destination="@id/persegiFragment"/>
+        <action android:id="@+id/action_firstFragment_to_segitigaFragment" app:destination="@id/segitigaFragment"/>
+    </fragment>
+    <fragment android:id="@+id/aboutFragment" android:name="org.d3if0086.myapplication.AboutFragment"
+              android:label="About" tools:layout="@layout/fragment_about"/>
+    <fragment android:id="@+id/persegiFragment" android:name="org.d3if0086.myapplication.PersegiFragment"
+              android:label="Persegi Panjang" tools:layout="@layout/fragment_persegi"/>
+    <fragment android:id="@+id/segitigaFragment" android:name="org.d3if0086.myapplication.SegitigaFragment"
+              android:label="Segitiga Siku-Siku" tools:layout="@layout/fragment_segitiga"/>
+</navigation>
